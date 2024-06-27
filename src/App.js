@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Button } from '@mui/material';
+import React from 'react';
+import SimpleInterface from './components/SimpleInterface';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <div className='App'>
+      <SimpleInterface />
+       <Button variant='outlined' sx={{color: 'green', borderColor: 'green', marginTop: '10px'}}>Hello World</Button>
+   </div>
+  )
 }
 
 export default App;
